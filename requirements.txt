@@ -1,0 +1,15 @@
+# FAPR — works on macOS (MPS) and Colab (CUDA) from the same file.
+# bitsandbytes only installs/activates on Linux (Colab); the loader detects this.
+torch>=2.4
+transformers>=4.46,<4.58
+datasets>=2.20
+accelerate>=0.33
+gradio>=4.44
+numpy
+pandas
+matplotlib
+sentencepiece
+protobuf
+bitsandbytes>=0.43; platform_system == "Linux"
+# Optional, Apple Silicon int8 quantization (only if you hit memory pressure on the Mac):
+#   pip install optimum-quanto

@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# PyTorch / model artifacts
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+models/
+checkpoints/
+runs/
+wandb/
+
+# Gradio
+flagged/
+gradio_cached_examples/
+
+# Project-specific
+data/results/
+
+# Environment / secrets
+.env
+.env.*
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

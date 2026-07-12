@@ -1,0 +1,11 @@
+{
+  "model_id": "Qwen/Qwen2.5-3B-Instruct",
+  "dataset": "facebook/belebele (flores_passage field; parallel FLORES-200 paragraphs)",
+  "n_passages": 300,
+  "computed": "2026-07-11T14:11:20",
+  "phi": {
+    "english": 1.0,
+    "telugu": 6.947,
+    "hindi": 4.404
+  }
+}

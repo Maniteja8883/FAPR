@@ -1,0 +1,11 @@
+{
+  "model_id": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "dataset": "FLORES-200/Belebele parallel passages, measured during the Colab phase (July 2026)",
+  "n_passages": null,
+  "note": "Carried over from the Colab notebook so the old numbers stay reproducible. The extreme Telugu value is a byte-fallback artifact of the Llama-2 32K vocab (Telugu script -> ~3 byte-tokens per character), not a property of Telugu. Compare with phi_Qwen_Qwen2.5-3B-Instruct.json after running scripts/compute_phi.py.",
+  "phi": {
+    "english": 1.0,
+    "telugu": 10.67,
+    "hindi": 4.58
+  }
+}
