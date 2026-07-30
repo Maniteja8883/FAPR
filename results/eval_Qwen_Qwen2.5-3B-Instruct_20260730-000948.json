@@ -1,0 +1,264 @@
+{
+  "args": {
+    "model": "Qwen/Qwen2.5-3B-Instruct",
+    "quantize": "auto",
+    "langs": [
+      "telugu"
+    ],
+    "n": 1,
+    "depths": [
+      0,
+      25,
+      50,
+      75,
+      100
+    ],
+    "conditions": [
+      "baseline",
+      "fapr",
+      "random"
+    ],
+    "content_tokens": 100,
+    "seed": 42,
+    "ceiling": false,
+    "overflow": false,
+    "quick": false,
+    "out": null
+  },
+  "summary": {
+    "telugu/baseline": {
+      "n": 5,
+      "raw_acc": 0.6,
+      "cal_acc": 0.8,
+      "cal_acc_ci95": [
+        0.4,
+        1.0
+      ],
+      "acc_by_depth": {
+        "0": 1.0,
+        "25": 1.0,
+        "50": 0.0,
+        "75": 1.0,
+        "100": 1.0
+      },
+      "positional_gini": 0.2,
+      "pred_histogram": {
+        "B": 3,
+        "A": 2
+      },
+      "mean_raw_tokens": 1874
+    },
+    "telugu/fapr": {
+      "n": 5,
+      "raw_acc": 0.2,
+      "cal_acc": 0.2,
+      "cal_acc_ci95": [
+        0.0,
+        0.6
+      ],
+      "acc_by_depth": {
+        "0": 0.0,
+        "25": 0.0,
+        "50": 1.0,
+        "75": 0.0,
+        "100": 0.0
+      },
+      "positional_gini": 0.8,
+      "pred_histogram": {
+        "D": 4,
+        "A": 1
+      },
+      "mean_raw_tokens": 1874
+    },
+    "telugu/random": {
+      "n": 5,
+      "raw_acc": 0.2,
+      "cal_acc": 0.2,
+      "cal_acc_ci95": [
+        0.0,
+        0.6
+      ],
+      "acc_by_depth": {
+        "0": 0.0,
+        "25": 0.0,
+        "50": 0.0,
+        "75": 0.0,
+        "100": 1.0
+      },
+      "positional_gini": 0.8,
+      "pred_histogram": {
+        "D": 2,
+        "A": 2,
+        "B": 1
+      },
+      "mean_raw_tokens": 1874
+    }
+  },
+  "records": [
+    {
+      "lang": "telugu",
+      "condition": "baseline",
+      "depth": 0,
+      "q": 553,
+      "gold": "B",
+      "raw_pred": "D",
+      "cal_pred": "B",
+      "raw_tokens": 1874,
+      "phi_used": 1.0
+    },
+    {
+      "lang": "telugu",
+      "condition": "baseline",
+      "depth": 25,
+      "q": 553,
+      "gold": "B",
+      "raw_pred": "B",
+      "cal_pred": "B",
+      "raw_tokens": 1874,
+      "phi_used": 1.0
+    },
+    {
+      "lang": "telugu",
+      "condition": "baseline",
+      "depth": 50,
+      "q": 553,
+      "gold": "D",
+      "raw_pred": "A",
+      "cal_pred": "A",
+      "raw_tokens": 1874,
+      "phi_used": 1.0
+    },
+    {
+      "lang": "telugu",
+      "condition": "baseline",
+      "depth": 75,
+      "q": 553,
+      "gold": "A",
+      "raw_pred": "A",
+      "cal_pred": "A",
+      "raw_tokens": 1874,
+      "phi_used": 1.0
+    },
+    {
+      "lang": "telugu",
+      "condition": "baseline",
+      "depth": 100,
+      "q": 553,
+      "gold": "B",
+      "raw_pred": "B",
+      "cal_pred": "B",
+      "raw_tokens": 1874,
+      "phi_used": 1.0
+    },
+    {
+      "lang": "telugu",
+      "condition": "fapr",
+      "depth": 0,
+      "q": 553,
+      "gold": "B",
+      "raw_pred": "A",
+      "cal_pred": "D",
+      "raw_tokens": 1874,
+      "phi_used": 6.947
+    },
+    {
+      "lang": "telugu",
+      "condition": "fapr",
+      "depth": 25,
+      "q": 553,
+      "gold": "B",
+      "raw_pred": "A",
+      "cal_pred": "A",
+      "raw_tokens": 1874,
+      "phi_used": 6.947
+    },
+    {
+      "lang": "telugu",
+      "condition": "fapr",
+      "depth": 50,
+      "q": 553,
+      "gold": "D",
+      "raw_pred": "A",
+      "cal_pred": "D",
+      "raw_tokens": 1874,
+      "phi_used": 6.947
+    },
+    {
+      "lang": "telugu",
+      "condition": "fapr",
+      "depth": 75,
+      "q": 553,
+      "gold": "A",
+      "raw_pred": "A",
+      "cal_pred": "D",
+      "raw_tokens": 1874,
+      "phi_used": 6.947
+    },
+    {
+      "lang": "telugu",
+      "condition": "fapr",
+      "depth": 100,
+      "q": 553,
+      "gold": "B",
+      "raw_pred": "A",
+      "cal_pred": "D",
+      "raw_tokens": 1874,
+      "phi_used": 6.947
+    },
+    {
+      "lang": "telugu",
+      "condition": "random",
+      "depth": 0,
+      "q": 553,
+      "gold": "B",
+      "raw_pred": "A",
+      "cal_pred": "D",
+      "raw_tokens": 1874,
+      "phi_used": 8.187
+    },
+    {
+      "lang": "telugu",
+      "condition": "random",
+      "depth": 25,
+      "q": 553,
+      "gold": "B",
+      "raw_pred": "A",
+      "cal_pred": "A",
+      "raw_tokens": 1874,
+      "phi_used": 11.7503
+    },
+    {
+      "lang": "telugu",
+      "condition": "random",
+      "depth": 50,
+      "q": 553,
+      "gold": "D",
+      "raw_pred": "A",
+      "cal_pred": "A",
+      "raw_tokens": 1874,
+      "phi_used": 11.2247
+    },
+    {
+      "lang": "telugu",
+      "condition": "random",
+      "depth": 75,
+      "q": 553,
+      "gold": "A",
+      "raw_pred": "A",
+      "cal_pred": "D",
+      "raw_tokens": 1874,
+      "phi_used": 9.4112
+    },
+    {
+      "lang": "telugu",
+      "condition": "random",
+      "depth": 100,
+      "q": 553,
+      "gold": "B",
+      "raw_pred": "A",
+      "cal_pred": "B",
+      "raw_tokens": 1874,
+      "phi_used": 2.2129
+    }
+  ]
+}
